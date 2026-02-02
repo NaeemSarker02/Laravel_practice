@@ -10,6 +10,8 @@ Route::get('/test', function () {
     ]);
 });
 
+
+
 // CRUD routes
 Route::post('/posts', [PostController::class, 'store']); // Create
 Route::get('/posts', [PostController::class, 'index']);  // Get all
