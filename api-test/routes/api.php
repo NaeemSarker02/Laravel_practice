@@ -37,6 +37,8 @@ Route::middleware('auth:sanctum')->group(function(){
         Route::apiResource('posts',PostController::class);
     });
 
+
+    
     // Comments
     Route::get('/posts/{postId}/comments',[CommentController::class,'index']);
     Route::post('/comments',[CommentController::class,'store']);
